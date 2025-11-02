@@ -1,0 +1,520 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Parâmetros Globais */
+
+h2{
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 10px 20px;
+}
+
+/* Estilos Principais */
+
+body{
+    background-color: #f0f0f0;
+}
+
+header{
+    width: 100%;
+    height: 14%;
+    background-color: #060606;
+    color: white;
+    padding: 0px;
+    text-align: center;
+}
+
+#banner-header{
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    background-color: #1A3666;
+    background-image: url(../image/RickAndMorty.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Navegação */
+nav{
+    background-color: #ffffff;
+    padding: 1% 8% 1% 45%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a{
+    width: 80%;
+    height: 100%;
+    color: #1A3666;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0px 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #025BAA;
+    color: white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/* Conteudo Principal */
+
+/* ------------------------------------------ Sobre a Série ------------------------------------------ */
+#sobre{
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+#sobre div{
+    width: 100%;
+    height: 32%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Imagens */
+#logo-sobre{
+    width: 40%;
+    height: 300px;
+    background-image: url(../image/rick-and-morty-smith-family-portal-monster-387@2@a-thumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 12px;
+    text-align: center;
+}
+
+#img2{
+    width: 40%;
+    height: 50px;
+    background-image: url(../image/img2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 12px;
+    text-align: center;
+}
+
+#img3{
+    width: 40%;
+    height: 50px;
+    background-image: url(../image/img3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 12px;
+    text-align: center;
+}
+
+#img4{
+    width: 40%;
+    height: 50px;
+    background-image: url(../image/img4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 12px;
+    text-align: center;
+}
+
+#img5{
+    width: 40%;
+    height: 50px;
+    background-image: url(../image/img5.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 12px;
+    text-align: center;
+}
+
+#info-imagens div{
+    width: 40%;
+    height: 300px;
+    margin: 12px;
+    text-align: center;
+}
+
+#info-imagens div p{
+    font-size: large;
+    padding: 50px 30px;
+    text-align: justify;
+    width: 90%;
+}
+
+/* ------------------------------------------ Banner ------------------------------------------ */
+#banner-middle{
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    background-color: #025BAA;
+    background-image: url(../image/Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* ------------------------------------------ Personagens ------------------------------------------ */
+#personagens{
+    width: 100%;
+    height: 35%;
+    background-color: #02E478;
+    color: #1A3666;
+    padding: 20px;
+}
+
+#container-personagens{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    flex-direction: row;
+}
+
+#container-personagens div{
+    width: 80%;
+    height: 500px;
+    background-color: rgba(2, 91, 170, 80%);
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    text-align: center;
+}
+
+#container-personagens div h3{
+    font-size: large;
+    padding: 20px;
+    text-align: center center;
+    color: white;
+}
+
+#container-personagens div img{
+    width: 60%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+#container-personagens div p{
+    font-size: medium;
+    padding: 10px;
+    color: white;
+}
+
+#container-personagens div button{
+    width: 40%;
+    height: 40px;
+    margin: 20px auto;
+    background-color: #1A3666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+/* Estilos dos Cards */
+.card-personagem {
+  width: 80%;
+  height: 500px;
+  background-color: rgba(2, 91, 170, 0.8);
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.card-personagem:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos da Paginação e Barra de Busca */
+#paginacao button {
+  background-color: #1A3666;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: medium;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#paginacao button:hover {
+  background-color: #025BAA;
+}
+
+#paginacao button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#barra-busca input {
+  width: 40%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #1A3666;
+  font-size: medium;
+  margin-right: 10px;
+}
+
+#barra-busca button {
+  background-color: #1A3666;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: medium;
+  transition: background-color 0.3s;
+}
+
+#barra-busca button:hover {
+  background-color: #025BAA;
+}
+
+/* ----------------------------------------- Episódios ------------------------------------------ */
+#episodios{
+    width: 100%;
+    height: 32%;
+    background-color: #025BAA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.episodio{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.episodio div{
+    width: 40%;
+    height: 280px;
+    margin: 12px;
+    flex-direction: column;
+    justify-content: center center;
+}
+
+.episodio div h2{
+    font-size: large;
+    padding: 25px 30px;
+    text-align: left;
+}
+
+.episodio div p{
+    font-size: large;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+/* Imagens dos Episódios */
+#und1{
+    width: 40%;
+    height: 280px;
+    background-image: url(../image/Polo1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 12px;
+    text-align: center;
+}
+
+#und2{
+    width: 40%;
+    height: 280px;
+    background-image: url(../image/Polo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 12px;
+    text-align: center;
+}
+
+#und3{
+    width: 40%;
+    height: 280px;
+    background-image: url(../image/Polo3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 12px;
+    text-align: center;
+}
+
+/* ------------------------------------------ Sinopse ------------------------------------------ */
+#sinopse{
+    background-color: rgba(2, 91, 170, 80%);
+    color: white;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+#form-sinopse{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#info{
+    width: 80%;
+    height: 180px;
+    margin: 12px;
+    flex-direction: column;
+}
+
+#logo{
+    width: 20%;
+    height: 180px;
+    background-image: url(../image/rick-and-morty-portal-shoes.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 2px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #1A3666;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    bottom: 0;
+}
+
+/* ------------------------------------------ Media Queries ------------------------------------------ */
+@media (max-width: 1030px){
+    nav{
+        padding: 2% 5%;
+        text-align: center;
+    }
+
+    #sobre div{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #info-imagens div{
+        width: 90%;
+        height: auto;
+    }
+
+    #info{
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #banner-middle{
+        min-height: auto;
+    }
+
+    .episodio{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .episodio div{
+        width: 80%;
+        height: auto;
+    }
+
+    #form-sinopse{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info{
+        width: 90%;
+        height: auto;
+    }
+
+    #logo{
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    #container-personagens{
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+    }
+}
+
+@media (max-width: 550px){
+    header nav{
+        padding: 10% 0% 1% 0%;
+        text-align: center;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0%);
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../image/menu_branco.png);
+        background-size: 10%;
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+    }
+
+    header nav ul{
+        display: none;
+        flex-direction: column;
+    }
+
+    header nav:hover > #menu{
+        display: block;
+    }
+    
+    header nav a{
+        display: block;
+        background-color: rgba(255, 255, 255, 80%);
+        justify-content: center center;
+        margin: 4px 40px;
+        border-radius: 5px;
+    }
+
+    #banner-header{
+        min-height: 100px;
+        padding: 80px;
+    }
+}
