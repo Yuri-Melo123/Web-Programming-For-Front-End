@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!resposta.ok) throw new Error("Personagem não encontrado ou erro na API.");
 
       const dados = await resposta.json();
-      const personagens = dados.results;
+      const personagens = dados.results.slice(0, 12); // Limita a 12 personagens
 
       // Limpa o container
       container.innerHTML = "";

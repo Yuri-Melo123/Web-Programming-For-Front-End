@@ -150,18 +150,25 @@ nav a:hover{
     text-align: center;
 }
 
-#info-imagens div{
+#info-imagen div{
     width: 40%;
     height: 300px;
     margin: 12px;
     text-align: center;
 }
 
-#info-imagens div p{
+#info-imagen div p{
     font-size: large;
     padding: 50px 30px;
     text-align: justify;
     width: 90%;
+}
+
+#info-imagens div{
+    width: 40%;
+    height: 300px;
+    margin: 12px;
+    text-align: center;
 }
 
 /* ------------------------------------------ Banner ------------------------------------------ */
@@ -488,6 +495,11 @@ footer{
         align-items: center;
     }
     
+    #info-imagen div{
+        width: 90%;
+        height: auto;
+    }
+
     #info-imagens div{
         width: 90%;
         height: auto;
