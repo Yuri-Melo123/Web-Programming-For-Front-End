@@ -349,40 +349,6 @@ nav a:hover{
     text-align: left;
 }
 
-/* Imagens dos Episódios */
-#und1{
-    width: 40%;
-    height: 280px;
-    background-image: url(../image/Polo1.jpeg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin: 12px;
-    text-align: center;
-}
-
-#und2{
-    width: 40%;
-    height: 280px;
-    background-image: url(../image/Polo2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin: 12px;
-    text-align: center;
-}
-
-#und3{
-    width: 40%;
-    height: 280px;
-    background-image: url(../image/Polo3.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin: 12px;
-    text-align: center;
-}
-
 /* ------------------------------------------ Episódios JS ------------------------------------------ */
 
 .card-episodio img {
@@ -436,6 +402,49 @@ nav a:hover{
 
 #barra-busca-episodios button:hover {
   background-color: #025BAA;
+}
+
+/* ------------------------------------------ Reutilizáveis -------------------------------------- */
+.barra-busca input {
+  width: 40%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #1A3666;
+  font-size: medium;
+  margin-right: 10px;
+}
+
+.barra-busca button,
+.btn-paginacao {
+  background-color: #1A3666;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: medium;
+  transition: background-color 0.3s;
+}
+
+.barra-busca button:hover,
+.btn-paginacao:hover {
+  background-color: #025BAA;
+}
+
+.btn-paginacao:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.card-personagem img,
+.card-episodio img {
+  border-bottom: 3px solid #025BAA;
+}
+
+.card-personagem:hover,
+.card-episodio:hover {
+  background-color: rgba(2, 91, 170, 0.9);
 }
 
 /* ------------------------------------------ Sinopse ------------------------------------------ */
