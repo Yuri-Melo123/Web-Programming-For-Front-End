@@ -12,7 +12,7 @@ Depois de pronto eu achei melhor criar um novo arquivo para armazenar as funçõ
 
 Como a versão 01 foi finalizada e a versão 02 ainda está em desenvolvimento, pode-se alterar a versão mudando o número da pasta no head do index.html conforme mostrado nas imagens abaixo:
 
-<img width="723" height="209" alt="image" src="https://github.com/user-attachments/assets/1286361b-d554-4af3-ac4f-adc18653fb3a" />
+<img width="716" height="209" alt="image" src="https://github.com/user-attachments/assets/d4577842-c481-402a-a245-d271970b0523" />
 
 <img width="723" height="209" alt="image" src="https://github.com/user-attachments/assets/3c08fb12-067d-43eb-9cc0-428bd273e2ad" />
 
